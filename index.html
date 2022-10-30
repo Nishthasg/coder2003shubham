@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App Javascript</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,900&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,900&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="prism.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="prism.js"></script>
+    <title>HTML Cheatsheet</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header>TODO List</header>
-    <div class="inputField">
-      <input type="text" placeholder="Add your new todo">
-      <button class="material-symbols-outlined">
-        add_task
-      </button>
+    <nav>
+        <span class="logo"><img src="copylogo.png" alt=""></span>
+        <div>
+            This HTML Cheatsheet is for You!
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li><b>HTML Boilerplate</b>  This is the basic HTML code<pre class="language-html"><code> &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;</code> </pre></li>
+            <li><b>Heading</b> <br>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags<pre class="language-html"><code> &lt;h1&gt;This is heading 1&lt;/h1&gt;
+ &lt;h2&gt;This is heading 2&lt;/h2&gt;
+ &lt;h3&gt;This is heading 3&lt;/h3&gt;</code> </pre></li>
+            <li><b>Paragraphs</b> <br> The HTML &lt;p&gt; element defines a paragraph<pre class="language-html"><code> &lt;p&gt;This is a paragraph.&lt;/p&gt;
+ &lt;p&gt;This is another paragraph.&lt;/p&gt;</code> </pre></li>
+            <li><b> Style Attributes</b><br>  The HTML style attribute has the following syntax:<pre class="language-html"><code> &lt;tagname style="property:value;"&gt;&lt;/tagname&gt;</code> </pre></li>
+            <li><b>Background color</b> <br> The CSS background-color property defines the background color for an HTML element.
+
+                <pre class="language-html"><code> &lt;body style="background-color:powderblue;"&gt;&lt;/body&gt;</code> </pre></li>
+            <li><b>Fonts</b> <br> The CSS font-family property defines the font to be used for an HTML element:<pre class="language-html"><code> &lt;h1 style="font-family:verdana;"&gt;This is a heading&lt;/h1&gt;
+ &lt;p style="font-family:courier;"&gt;This is a paragraph.&lt;/p&gt;</code> </pre></li>
+
+        </ol>
     </div>
-    <ul class="todoList">
-      <!-- data are comes from local storage -->
-    </ul>
-    <div class="footer">
-      <span>You have <span class="pendingTasks"></span> pending tasks</span>
-      <button>Clear All</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
 </body>
 </html>
